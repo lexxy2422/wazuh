@@ -5,6 +5,7 @@ from logging import getLogger
 
 from opensearchpy import AsyncOpenSearch
 from wazuh.core.exception import WazuhIndexerError
+from wazuh.core.indexer.events_index import EventsIndex
 
 logger = getLogger('wazuh')
 
@@ -40,6 +41,7 @@ class Indexer:
         self._client = self._get_opensearch_client()
 
         # Register index clients here
+        self.events = EventsIndex(client=self._client)
 
     def _get_opensearch_client(self) -> AsyncOpenSearch:
         """Get a new OpenSearch client instance.
