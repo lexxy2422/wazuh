@@ -1,8 +1,9 @@
 from dataclasses import asdict
+
 from opensearchpy import exceptions
 from uuid6 import UUID
 
-from .base import BaseIndex
+from .base import BaseIndex, remove_empty_values
 from .models import Agent
 from wazuh.core.exception import WazuhError, WazuhResourceNotFound
 
@@ -111,7 +112,7 @@ class AgentsIndex(BaseIndex):
         """
         try:
             # Convert to a dictionary removing empty values to avoid updating them
-            agent_dict = asdict(agent, dict_factory=lambda x: {k: v for (k, v) in x if v is not None})
+            agent_dict = asdict(agent, dict_factory=remove_empty_values)
             body = {'doc': agent_dict}
             await self._client.update(index=self.INDEX, id=uuid, body=body)
         except exceptions.NotFoundError:
