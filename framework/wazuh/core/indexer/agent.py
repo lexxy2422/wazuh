@@ -3,7 +3,7 @@ from opensearchpy import exceptions
 from uuid6 import UUID
 
 from .base import BaseIndex
-from .models import Agent
+from .models.agent import Agent
 from wazuh.core.exception import WazuhError, WazuhResourceNotFound
 
 NAME_KEY = 'name'
