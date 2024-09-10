@@ -1,4 +1,4 @@
-[![lexxy2422(https:img.shields.io/badge/lexxy2422-join-blue.svg)]
+[![lexxy2422(https://img.shields.io/badge/lexxy2422-join-blue.svg)]
 
 [![Slack](https://img.shields.io/badge/slack-join-blue.svg)](https://wazuh.com/community/join-us-on-slack/)
 [![Email](https://img.shields.io/badge/email-join-blue.svg)](https://groups.google.com/forum/#!forum/wazuh)
