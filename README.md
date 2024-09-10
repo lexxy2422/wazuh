@@ -1,3 +1,4 @@
+[lexxy2422](https://img.shields.io/badge.lexxy2422-blue.svg)
 # Wazuh
 
 [![Slack](https://img.shields.io/badge/slack-join-blue.svg)](https://wazuh.com/community/join-us-on-slack/)
