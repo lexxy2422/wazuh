@@ -1,4 +1,4 @@
-## API Integration Test Mapping Script
+#API Integration Test Mapping Script
 ### What is it
 This is a script to generate a JSON file with all the API integration test mapping. This JSON file will be used to run the assigned test whenever a file is modified in a PR.
 
